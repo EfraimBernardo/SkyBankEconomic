@@ -1,0 +1,173 @@
+body{
+    background: #111827;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+hr{
+    opacity: 90%;
+}
+main{
+    .main-container{
+        .lateral-bar, .dasboard{
+            height: 97.2vh;
+            padding: 15px;
+        }
+        display: flex;
+        .lateral-bar{
+            background: #1f2937;
+            width: 350px;
+            border-right: solid 1px #418272;
+            .name{
+                background: #1f2937;
+                display: flex;
+                width: 100%;
+                /* position: fixed; */
+                padding: 22px;
+                align-items: center;
+                margin-left: -1.25vh;
+                top: 0;
+                height: 3.7vh;
+                justify-content: space-between;
+                margin-top: -1.27vh;
+                border-bottom: solid 1px #418272;
+                i{
+                    font-size: 25pt;
+                }
+                span{
+                    color: #ddd;
+                }
+                .icon{
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 100%;
+                    }
+                }
+                .nome p{
+                    color: #ddd;
+                }
+            }
+                li{
+                    display: flex;
+                    color: #ddd;
+                    font-size: 20pt;
+                    padding: 12px;
+                    cursor: pointer;
+                    margin: 1vh;
+                    margin-left: -0;
+                    width: 90%;
+                    border-radius: 8px;
+                    transition: .4s;
+                    i{
+                        margin-inline: 2vh;
+                    }
+                }
+            li:hover{
+                background: #3498db;
+            }
+            .out{
+                border-top: solid 1px #418272;
+            }
+        }
+        .dasboard{
+            background: #111827;
+            width: 100%;
+            justify-items: center;
+        }
+    }
+}
+
+.dashboard-header{
+    background: #1f2937;
+    display: flex;
+    width: 83.25%;
+    position: fixed;
+    padding: 22px;
+    align-items: center;
+    margin-left: -1.29vh;
+    top: 0;
+    height: 3.7vh;
+    justify-content: space-between;
+    border-bottom: solid 1px #418272;
+    color: #ddd;
+    i{
+        font-size: 20pt;
+        cursor: pointer;
+    }
+    .left{
+        width: 22vh;
+        strong{
+            font-size: 25pt;
+        }
+    }
+    .camp-name{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .right{
+        width: 16vh;
+    }
+}
+
+.dash-numeric{
+    /* background: magenta; */
+    width: 98%;
+    margin-top: 80px;
+    padding: 20px;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    .card{
+        background: #1f2937;
+        width: 30vh;
+        border-radius: 10px;
+        padding: 15px;
+        height: 13vh;
+        transition: 0.4s;
+        div{
+            margin-left: 2vh;
+            h2, p{
+                color: #ddd;
+            }
+        }
+    }
+}
+
+.dash-percent{
+    /* background: blue; */
+    width: 98%;
+    padding: 20px;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    .card{
+        background: #1f2937;
+        width: 70vh;
+        border-radius: 10px;
+        padding: 15px;
+        height: 30vh;
+        transition: 0.4s;
+        div{
+            margin-left: 2vh;
+            h2, p{
+                color: #ddd;
+            }
+        }
+        table{
+            width: 90%;
+            thead{
+                color: #ddd;
+                text-align: left;
+                th{
+                    border-bottom: solid 2.2px #418272;
+                }
+            }
+        }
+    }
+}
+
+.card:hover{
+    transform: scale(1.007)
+}
